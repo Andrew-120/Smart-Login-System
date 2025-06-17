@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+</head>
+
+<body class="bg-dark">
+    <div class="container bg-dark text-bg-dark shadow-lg p-5 mt-5 text-center">
+        <h1 class="text-primary mb-4">Smart Login System</h1>
+        <form id="signupForm">
+            <div class="mb-4">
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                <div id="messageName" class="alert alert-danger d-none">
+                    You should enter first character capitalized then 3–10 small letters.
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                <div id="messageEmail" class="alert alert-danger d-none">
+                    You should enter a valid email. EX: ahmed@gmail.com
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password">
+                <div id="messagePassword" class="alert alert-danger d-none">
+                    You should enter a valid password. EX: 12345678
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary w-100 w-md-75 mb-4" id="signUpBtn">Sign Up</button>
+            <span class="text-white">You have an account? <a href="index.html">Sign In</a></span>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+
+</html>
