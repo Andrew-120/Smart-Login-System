@@ -2,6 +2,7 @@ const nameInput = document.getElementById("nameInput");
 const emailInput = document.getElementById("emailInput");
 const passwordInput = document.getElementById("passwordInput");
 const form = document.getElementById("signupForm");
+const signInLink = document.querySelector("span a");
 
 const messageName = document.getElementById("messageName");
 const messageEmail = document.getElementById("messageEmail");
@@ -65,7 +66,7 @@ form.addEventListener("submit", function (e) {
     title: "Success",
     text: "Registration successful!",
   }).then(() => {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   });
 });
 
@@ -131,3 +132,8 @@ function validationPassword() {
 nameInput.addEventListener("input", validationName);
 emailInput.addEventListener("input", validationEmail);
 passwordInput.addEventListener("input", validationPassword);
+
+signInLink.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.location.href = "../index.html";
+});
