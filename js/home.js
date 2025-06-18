@@ -7,5 +7,5 @@ if (nameSpan && name) {
 
 document.getElementById("logoutBtn").addEventListener("click", function () {
   localStorage.removeItem("loggedIn");
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });
