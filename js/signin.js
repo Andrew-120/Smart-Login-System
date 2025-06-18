@@ -28,7 +28,7 @@ form.addEventListener("submit", function (e) {
   if (matchedUser) {
     localStorage.setItem("loggedIn", "true");
     localStorage.setItem("name", matchedUser.name);
-    window.location.href = "home.html";
+    window.location.href = "pages/home.html";
   } else {
     Swal.fire({
       icon: "error",
@@ -42,7 +42,7 @@ form.addEventListener("submit", function (e) {
 const signup = document.querySelector("span a");
 signup.addEventListener("click", function (e) {
   e.preventDefault();
-  window.location.href = "signup.html";
+  window.location.href = "pages/signup.html";
 });
 
 function clearForm() {
